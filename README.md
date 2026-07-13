@@ -275,9 +275,7 @@ B.Tech Computer Science Student
 
 GLA University, Mathura
 
-GitHub: *(Add your GitHub profile link here)*
-
-LinkedIn: *(Add your LinkedIn profile link here)*
+LinkedIn: *(www.linkedin.com/in/jalaj-pachauri )*
 
 ---
 
