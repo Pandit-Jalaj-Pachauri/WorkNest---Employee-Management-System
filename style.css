@@ -1,0 +1,695 @@
+/*=========================================
+    Google Font
+=========================================*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/*=========================================
+    CSS Variables
+=========================================*/
+
+:root{
+
+    --primary:#2E7D32;
+    --primary-light:#4CAF50;
+    --secondary:#8D6E63;
+    --background:#F7F4EA;
+    --card:#FFFFFF;
+    --text:#2F3A2F;
+    --border:#D8D8D8;
+    --shadow:0 10px 25px rgba(0,0,0,.08);
+    --radius:14px;
+
+}
+
+/*=========================================
+    Reset
+=========================================*/
+
+*{
+
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+
+}
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+    background:var(--background);
+    color:var(--text);
+    min-height:100vh;
+    line-height:1.6;
+
+}
+
+img{
+
+    max-width:100%;
+    display:block;
+
+}
+
+a{
+
+    text-decoration:none;
+    color:inherit;
+
+}
+
+ul{
+
+    list-style:none;
+
+}
+
+/*=========================================
+    Header
+=========================================*/
+
+header{
+
+    background:var(--primary);
+    color:white;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:18px 8%;
+    position:sticky;
+    top:0;
+    z-index:1000;
+
+    box-shadow:var(--shadow);
+
+}
+
+.logo{
+
+    font-size:1.6rem;
+    font-weight:700;
+    letter-spacing:.5px;
+
+}
+
+nav ul{
+
+    display:flex;
+    gap:28px;
+
+}
+
+nav a{
+
+    font-weight:500;
+    transition:.3s;
+
+}
+
+nav a:hover{
+
+    color:#DCE775;
+
+}
+
+/*=========================================
+    Hero
+=========================================*/
+
+.hero{
+
+    padding:70px 8%;
+    text-align:center;
+
+    background:linear-gradient(
+        rgba(46,125,50,.08),
+        rgba(255,255,255,.5)
+    );
+
+}
+
+.hero h1{
+
+    font-size:2.8rem;
+    margin-bottom:15px;
+    color:var(--primary);
+
+}
+
+.hero p{
+
+    max-width:700px;
+    margin:auto;
+    color:#555;
+
+}
+
+/*=========================================
+    Main Layout
+=========================================*/
+
+main{
+
+    width:min(1200px,92%);
+    margin:40px auto;
+
+}
+
+/*=========================================
+    Dashboard Cards
+=========================================*/
+
+.dashboard{
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+    margin-bottom:45px;
+
+}
+
+.card{
+
+    background:var(--card);
+    border-radius:var(--radius);
+    padding:30px;
+    text-align:center;
+
+    box-shadow:var(--shadow);
+
+    transition:.3s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-6px);
+
+}
+
+.card h2{
+
+    font-size:1rem;
+    color:#666;
+    margin-bottom:15px;
+
+}
+
+.card h1{
+
+    color:var(--primary);
+    font-size:2.4rem;
+
+}
+
+/*=========================================
+    Common Section
+=========================================*/
+
+section{
+
+    margin-bottom:45px;
+
+}
+
+section h2{
+
+    color:var(--primary);
+    margin-bottom:20px;
+
+}
+/*=========================================
+    Employee Registration Form
+=========================================*/
+
+.form-section{
+
+    background:var(--card);
+    padding:30px;
+    border-radius:var(--radius);
+    box-shadow:var(--shadow);
+
+}
+
+.form-grid{
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+
+}
+
+.input-group{
+
+    display:flex;
+    flex-direction:column;
+
+}
+
+.input-group label{
+
+    margin-bottom:8px;
+    font-weight:600;
+    color:var(--text);
+
+}
+
+.input-group input,
+.input-group select{
+
+    padding:12px 15px;
+    border:1px solid var(--border);
+    border-radius:10px;
+    outline:none;
+    font-size:1rem;
+    transition:.3s;
+    background:white;
+
+}
+
+.input-group input:focus,
+.input-group select:focus{
+
+    border-color:var(--primary);
+    box-shadow:0 0 0 3px rgba(46,125,50,.15);
+
+}
+
+/*=========================================
+    Buttons
+=========================================*/
+
+.button-group{
+
+    margin-top:25px;
+    display:flex;
+    gap:15px;
+    flex-wrap:wrap;
+
+}
+
+.button-group button{
+
+    padding:12px 24px;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+    font-size:1rem;
+    font-weight:600;
+    transition:.3s;
+
+}
+
+.button-group button[type="submit"]{
+
+    background:var(--primary);
+    color:white;
+
+}
+
+.button-group button[type="submit"]:hover{
+
+    background:var(--primary-light);
+    transform:translateY(-2px);
+
+}
+
+.button-group button[type="reset"]{
+
+    background:var(--secondary);
+    color:white;
+
+}
+
+.button-group button[type="reset"]:hover{
+
+    opacity:.9;
+    transform:translateY(-2px);
+
+}
+
+/*=========================================
+    Search Section
+=========================================*/
+
+.search-section{
+
+    background:var(--card);
+    padding:25px;
+    border-radius:var(--radius);
+    box-shadow:var(--shadow);
+
+}
+
+.search-grid{
+
+    display:grid;
+    grid-template-columns:2fr 1fr;
+    gap:20px;
+
+}
+
+.search-grid input,
+.search-grid select{
+
+    padding:12px 15px;
+    border:1px solid var(--border);
+    border-radius:10px;
+    outline:none;
+    font-size:1rem;
+
+}
+
+.search-grid input:focus,
+.search-grid select:focus{
+
+    border-color:var(--primary);
+
+}
+
+/*=========================================
+    Employee Table
+=========================================*/
+
+.table-section{
+
+    background:var(--card);
+    padding:30px;
+    border-radius:var(--radius);
+    box-shadow:var(--shadow);
+
+}
+
+.table-container{
+
+    overflow-x:auto;
+
+}
+
+table{
+
+    width:100%;
+    border-collapse:collapse;
+    min-width:800px;
+
+}
+
+thead{
+
+    background:var(--primary);
+    color:white;
+
+}
+
+th,
+td{
+
+    padding:15px;
+    text-align:left;
+
+}
+
+tbody tr{
+
+    border-bottom:1px solid var(--border);
+    transition:.3s;
+
+}
+
+tbody tr:hover{
+
+    background:#F1F8E9;
+
+}
+
+td button{
+
+    padding:8px 15px;
+    border:none;
+    border-radius:8px;
+    background:#C62828;
+    color:white;
+    cursor:pointer;
+    transition:.3s;
+
+}
+
+td button:hover{
+
+    background:#B71C1C;
+
+}
+
+/*=========================================
+    Footer
+=========================================*/
+
+footer{
+
+    background:var(--primary);
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+
+}
+
+/*=========================================
+    Scrollbar
+=========================================*/
+
+::-webkit-scrollbar{
+
+    width:10px;
+    height:10px;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:var(--primary);
+    border-radius:20px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#E8E8E8;
+
+}
+
+/*=========================================
+    Animations
+=========================================*/
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+        transform:translateY(25px);
+
+    }
+
+    to{
+
+        opacity:1;
+        transform:translateY(0);
+
+    }
+
+}
+
+.hero,
+.card,
+.form-section,
+.search-section,
+.table-section{
+
+    animation:fadeUp .6s ease;
+
+}
+
+/*=========================================
+    Tablet
+=========================================*/
+
+@media(max-width:900px){
+
+    header{
+
+        flex-direction:column;
+        gap:15px;
+        text-align:center;
+
+    }
+
+    nav ul{
+
+        flex-wrap:wrap;
+        justify-content:center;
+
+    }
+
+    .hero h1{
+
+        font-size:2.2rem;
+
+    }
+
+    .search-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+/*=========================================
+    Mobile
+=========================================*/
+
+@media(max-width:600px){
+
+    body{
+
+        font-size:15px;
+
+    }
+
+    .hero{
+
+        padding:50px 20px;
+
+    }
+
+    .hero h1{
+
+        font-size:1.8rem;
+
+    }
+
+    main{
+
+        width:95%;
+
+    }
+
+    .dashboard{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .form-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .button-group{
+
+        flex-direction:column;
+
+    }
+
+    .button-group button{
+
+        width:100%;
+
+    }
+
+    header{
+
+        padding:15px;
+
+    }
+
+    nav ul{
+
+        gap:15px;
+
+    }
+
+    table{
+
+        min-width:700px;
+
+    }
+
+}
+
+/* Theme Selector */
+
+.theme-selector{
+
+    display:flex;
+    align-items:center;
+    gap:10px;
+
+}
+
+.theme-selector label{
+
+    color:white;
+    font-weight:500;
+
+}
+
+.theme-selector select{
+
+    padding:8px 12px;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    font-family:'Poppins',sans-serif;
+
+}
+
+/* Blue Theme */
+
+body.blue{
+
+    --primary:#1565C0;
+    --primary-light:#42A5F5;
+    --secondary:#0D47A1;
+
+}
+
+/* Yellow Theme */
+
+body.yellow{
+
+    --primary:#F9A825;
+    --primary-light:#FDD835;
+    --secondary:#F57F17;
+
+}
+
+/* Red Theme */
+
+body.red{
+
+    --primary:#8E2430;
+    --primary-light:#C62828;
+    --secondary:#5D4037;
+
+}
+
+/* Purple Theme */
+
+body.purple{
+
+    --primary:#6A1B9A;
+    --primary-light:#AB47BC;
+    --secondary:#4527A0;
+
+}
