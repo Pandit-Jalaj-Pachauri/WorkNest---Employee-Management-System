@@ -1,4 +1,4 @@
-# 🌿 Earth HR - Employee Management System
+# WorkNest - Employee Management System
 
 ## Project Overview
 
